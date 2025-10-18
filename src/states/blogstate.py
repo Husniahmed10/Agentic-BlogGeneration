@@ -6,6 +6,6 @@ class Blog(BaseModel):
     content:str=Field(description="The main content of the blog post")
 
 class BlogState(TypedDict):
-    topic:str 
-    blog:Blog
-    current_language:str
+    topic:str # Topic of the blog
+    blog:Blog # Blogs
+    current_language:str # Current language of the blog
